@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO APP</title>
+  </head>
+  <style>
+    body {
+      margin: 0 !important;
+      padding: 0 !important;
+      background-color: #fafbfd;
+      font-family: OCR A Std, monospace;
+      color: #606c76;
+    }
+    .header {
+      color: #606c76;
+      margin-top: 10px;
+      text-align: center;
+    }
+    .message {
+      list-style: none;
+    }
+    .btn {
+      background-color: teal;
+      font-family: cursive;
+      border-radius: 5px;
+      color: white;
+      width: 40px;
+      margin: 10px;
+    }
+    .input {
+      color: #606c76;
+      height: 20px;
+      width: 300px;
+      background-color: #fafbfd;
+      border-radius: 5px;
+      border-color: teal;
+      margin: 10px;
+    }
+    .formDiv {
+      display: flex;
+      justify-content: center;
+    }
+    .list {
+      cursor: pointer;
+      list-style-type: '◻';
+      padding-left: 1rem;
+      margin: 10px;
+    }
+    .marker {
+      cursor: pointer;
+      list-style-type: '✔';
+      padding-left: 1rem;
+    }
+    .list ::marker {
+      margin: 10px;
+    }
+    .colorchange {
+      color: teal;
+    }
+    .ul {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+    }
+    .delete {
+      /* background-color: tomato;
+      height: 10px;
+      margin: 10px;
+      color: white;
+      padding: 10px;
+      text-align: justify; */
+      background-color: tomato;
+      color: white;
+      font-size: 12px;
+      margin: 6px;
+      padding: 0 4px;
+      line-height: 1.5;
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+  <body>
+    <div class="app">
+      <h1 class="header">To-Do App</h1>
+
+      <div class="formDiv">
+        <form class="form" action="">            
+            <input class="input"
+            type="text"
+            id="task"
+            placeholder="Please Enter A Task"
+            autocomplete="off"
+          />
+          <input class="input" type="date" />
+          <button class="btn" type="submit" id="submit">Add</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="./todo.js"></script>
+</html>
